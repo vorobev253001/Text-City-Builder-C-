@@ -1,0 +1,50 @@
+cmake_minimum_required(VERSION 3.21)
+project(CITYBUILDER_GAME)
+
+set(CMAKE_CXX_STANDARD 14)
+
+add_executable(CITYBUILDER_GAME main.cpp
+        MainMenu.h MainMenu.cpp
+        MenuOptions.cpp MenuOptions.h
+        Army.cpp Army.h
+        Map.cpp Map.h
+        Buildings/ArmoryBuilder.cpp Buildings/ArmoryBuilder.h
+        Buildings/BuildingOptions.cpp Buildings/BuildingOptions.h
+        Buildings/Buildings.cpp Buildings/Buildings.h
+        Buildings/BuildingsBuilder.cpp Buildings/BuildingsBuilder.h
+        Buildings/BuildingsDirector.cpp Buildings/BuildingsDirector.h
+        Buildings/ResourceMonitoring.cpp Buildings/ResourceMonitoring.h
+        Buildings/FarmBuilder.cpp  Buildings/FarmBuilder.h
+        Buildings/MarketBuilder.cpp  Buildings/MarketBuilder.h
+        Buildings/MineBuilder.cpp  Buildings/MineBuilder.h
+        Buildings/SawmillBuilder.cpp  Buildings/SawmillBuilder.h
+        Enemy_factory/EasyEnemyFactory/EasyEnemyFactory.cpp Enemy_factory/EasyEnemyFactory/EasyEnemyFactory.h
+        Enemy_factory/HardEnemyFactory/HardEnemyFactory.cpp Enemy_factory/HardEnemyFactory/HardEnemyFactory.h
+        Enemy_factory/EnemyFactory.cpp Enemy_factory/EnemyFactory.h
+        Enemy_factory/Wolf.cpp Enemy_factory/Wolf.h
+        Enemy_factory/Barbarians.cpp Enemy_factory/Barbarians.h
+        Enemy_factory/EasyEnemyFactory/WeakWolf.cpp Enemy_factory/EasyEnemyFactory/WeakWolf.h
+        Enemy_factory/HardEnemyFactory/DireWolf.cpp Enemy_factory/HardEnemyFactory/DireWolf.h
+        Enemy_factory/EasyEnemyFactory/LostBarbarians.cpp Enemy_factory/EasyEnemyFactory/LostBarbarians.h
+        Enemy_factory/HardEnemyFactory/Shamans.cpp Enemy_factory/HardEnemyFactory/Shamans.h
+        Enemy_factory/EasyEnemyFactory/Weakling.cpp Enemy_factory/EasyEnemyFactory/Weakling.h
+        Enemy_factory/Demon.cpp Enemy_factory/Demon.h
+        Enemy_factory/HardEnemyFactory/Djinn.cpp Enemy_factory/HardEnemyFactory/Djinn.h
+        Tile_factory/TileFactory.cpp Tile_factory/TileFactory.h
+        Tile_factory/BorderColumn.cpp Tile_factory/BorderColumn.h
+        Tile_factory/Tile.cpp Tile_factory/Tile.h
+        Tile_factory/TileStats.cpp Tile_factory/TileStats.h
+        Tile_factory/EasyTileFactory.cpp Tile_factory/EasyTileFactory.h
+        Tile_factory/BorderRow.cpp Tile_factory/BorderRow.h
+        Tile_factory/MyCity.cpp Tile_factory/MyCity.h
+        Tile_factory/HardTileFactory.cpp Tile_factory/HardTileFactory.h
+        Tile_factory/EnemyTile.cpp Tile_factory/EnemyTile.h
+        Tile_factory/Resources.cpp Tile_factory/Resources.h
+        Tile_factory/EnemyVillage.cpp Tile_factory/EnemyVillage.h
+        Tile_factory/Treasure.cpp Tile_factory/Treasure.h
+        ArmyOptions.cpp ArmyOptions.h
+        EndOptions.cpp EndOptions.h
+        MapOptions.cpp MapOptions.h
+        GenerateMap.cpp GenerateMap.h
+        Engine.cpp Engine.h
+        DifficultyOption.cpp DifficultyOption.h)
